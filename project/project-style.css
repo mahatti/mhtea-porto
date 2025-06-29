@@ -35,7 +35,7 @@ body {
 .close-btn {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     font-size: 32px;
     cursor: pointer;
     color: #666;
@@ -47,13 +47,14 @@ body {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
 }
 
 .close-btn:hover {
     background-color: #f0f0f0;
     transform: scale(1.1);
+    background-color: #DA6C6C;
 }
 
 .project-info {
@@ -75,6 +76,58 @@ body {
 
 .project-info .row {
     margin: 12px 0;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.project-header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.github-link:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.github-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.github-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.github-text {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
 }
 
 /* Gallery styles */
@@ -109,12 +162,14 @@ body {
 
 /* Mobile gallery specific styles */
 .gallery-mobile {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
     padding: 20px;
     width: 100%;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .gallery-mobile .gallery-box {
