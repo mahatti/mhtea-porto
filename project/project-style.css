@@ -199,35 +199,49 @@ body {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
-    .gallery .gallery-box {
-        max-width: 800px;
-        margin: 0 auto;
+    
+    .close-btn {
+        font-size: 36px;
+        width: 50px;
+        height: 50px;
     }
 }
 
-/* Responsive styles for mobile gallery */
 @media (max-width: 768px) {
     .gallery-mobile {
-        gap: 25px;
-        padding: 15px;
+        display: flex;
     }
-
+    
     .gallery-mobile .gallery-box {
         width: 280px;
-        height: 605px;
+        height: 600px;
+    }
+    
+    .close-btn {
+        font-size: 40px;
+        width: 60px;
+        height: 60px;
+        top: 15px;
+        right: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .gallery-mobile {
         gap: 20px;
-        padding: 12px;
     }
-
+    
     .gallery-mobile .gallery-box {
-        width: 260px;
-        height: 560px;
+        width: 250px;
+        height: 550px;
+    }
+    
+    .close-btn {
+        font-size: 44px;
+        width: 70px;
+        height: 70px;
+        top: 10px;
+        right: 10px;
     }
 }
 
@@ -244,6 +258,7 @@ body {
 @media (max-width: 1200px) {
     body {
         padding: 40px;
+        padding-top: 90px;
     }
 
     .project-info {
@@ -297,6 +312,7 @@ body {
 @media (max-width: 768px) {
     body {
         padding: 25px;
+        padding-top: 90px;
     }
 
     .project-info {
@@ -349,6 +365,7 @@ body {
 @media (max-width: 480px) {
     body {
         padding: 15px;
+        padding-top: 90px;
     }
 
     .project-info {

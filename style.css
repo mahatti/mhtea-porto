@@ -97,7 +97,7 @@ header {
 }
 
 .about {
-  padding: 40px 20px;
+  padding: 30px;
   background-color: #ffffff;
 }
 
@@ -327,7 +327,7 @@ header {
 }
 
 .project h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -336,7 +336,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding-bottom: 10px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .project-box {
@@ -410,7 +410,7 @@ header {
 }
 
 .event h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -420,7 +420,7 @@ header {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -521,7 +521,7 @@ header {
 }
 
 .design h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -626,12 +626,10 @@ header {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 0 15px;
   }
 
   .carousel {
     gap: 15px;
-    padding: 20px;
   }
 
   .event-card {
@@ -699,7 +697,6 @@ header {
 
   .project-grid {
     grid-template-columns: 1fr;
-    padding: 0 15px;
     gap: 20px;
   }
 
@@ -711,10 +708,6 @@ header {
     padding-bottom: 10px;
   }
 
-  .carousel {
-    padding: 15px;
-  }
-
   .event-card {
     min-width: 280px;
     margin: 0 5px;
@@ -722,10 +715,6 @@ header {
 
   .event-image {
     height: 160px;
-  }
-
-  .design-carousel {
-    padding: 15px;
   }
 
   .design-carousel-item {
@@ -743,7 +732,7 @@ header {
 
   /* Adjust sections padding */
   .project, .event, .design {
-    padding: 30px 15px;
+    padding: 40px;
   }
 
   /* Adjust container widths with padding */
@@ -883,11 +872,7 @@ header {
 
   /* Keep some padding on mobile */
   .project, .event, .design {
-    padding: 20px 12px;
-  }
-
-  .project-grid {
-    padding: 0 12px;
+    padding: 30px;
   }
 
   .carousel {
