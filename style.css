@@ -98,7 +98,6 @@ header {
 
 .about {
   padding: 30px;
-  padding-top: 100px;
   background-color: #ffffff;
 }
 
@@ -804,7 +803,7 @@ header {
   }
 
   .home {
-    padding: 25px 20px;
+    padding: 30px 20px;
     padding-top: 70px;
     gap: 20px;
     justify-content: center;
@@ -869,6 +868,10 @@ header {
 
   .skill-category li {
     font-size: 0.85rem;
+  }
+
+  .about {
+    padding-top: 50px;
   }
 
   /* Keep some padding on mobile */
