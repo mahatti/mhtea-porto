@@ -64,3 +64,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Force download for CV and Portfolio buttons
+document.addEventListener('DOMContentLoaded', function() {
+  const cvBtn = document.querySelector('.cv-btn');
+  const portfolioBtn = document.querySelector('.portfolio-btn');
+  
+  if (cvBtn) {
+    cvBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = 'files/cv-mahatti.pdf';
+      link.download = 'cv-mahatti.pdf';
+      link.style.display = 'none';
+      
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
+  
+  if (portfolioBtn) {
+    portfolioBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = 'files/porto-mahatti.pdf';
+      link.download = 'porto-mahatti.pdf';
+      link.style.display = 'none';
+      
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
+});
