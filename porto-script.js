@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Create a temporary link element
       const link = document.createElement('a');
-      link.href = 'files/cv-mahatti.pdf';
-      link.download = 'cv-mahatti.pdf';
+      link.href = 'files/CV Made Mahatti Prayascita Chandra.pdf';
+      link.download = 'CV Made Mahatti Prayascita Chandra.pdf';
       link.style.display = 'none';
       
       // Append to body, click, and remove
@@ -95,14 +95,45 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Create a temporary link element
       const link = document.createElement('a');
-      link.href = 'files/porto-mahatti.pdf';
-      link.download = 'porto-mahatti.pdf';
+      link.href = 'files/Portofolio Made Mahatti Prayascita Chandra.pdf';
+      link.download = 'Portofolio Made Mahatti Prayascita Chandra.pdf';
       link.style.display = 'none';
       
       // Append to body, click, and remove
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+    });
+  }
+  
+  // Carousel dots functionality
+  const carousel = document.querySelector('.carousel');
+  const dots = document.querySelectorAll('.dot');
+  
+  if (carousel && dots.length > 0) {
+    // Update active dot based on scroll position
+    carousel.addEventListener('scroll', function() {
+      const scrollPosition = carousel.scrollLeft;
+      const cardWidth = carousel.querySelector('.event-card').offsetWidth + 20; // 20px gap
+      const activeIndex = Math.round(scrollPosition / cardWidth);
+      
+      // Update dots
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === activeIndex);
+      });
+    });
+    
+    // Click dot to scroll to specific card
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        const cardWidth = carousel.querySelector('.event-card').offsetWidth + 20;
+        const scrollPosition = index * cardWidth;
+        
+        carousel.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      });
     });
   }
 });
